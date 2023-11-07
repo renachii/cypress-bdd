@@ -26,9 +26,9 @@ Install:
   ```npx cypress run --headless --browser chrome```
 
 # Test Environment
-https://www.saucedemo.com/
+- https://www.saucedemo.com/
 
 # References
-https://docs.cypress.io/guides/references/assertions
-https://docs.cypress.io/guides/references/error-messages
-https://docs.cypress.io/guides/guides/command-line
+- https://docs.cypress.io/guides/references/assertions
+- https://docs.cypress.io/guides/references/error-messages
+- https://docs.cypress.io/guides/guides/command-line
