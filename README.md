@@ -20,10 +20,10 @@ Install:
 
 ## Test Execution
 - For commandline execution:
-  npx cypress run 
+  ```npx cypress run``` 
 
 - Run headless in chrome browser: 
-  npx cypress run --headless --browser chrome
+  ```npx cypress run --headless --browser chrome```
 
 # Test Environment
 https://admin-demo.nopcommerce.com/
