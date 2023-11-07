@@ -9,9 +9,12 @@ Install:
 ## Setup
 1. Create folder and open in Visual Studio code
 2. Open terminal and run command "npm init" to generate package.json file
-3. Install Cypress: "npm install cypress --save-dev"
-4. Install Cucumber preprocessor: "npm install --save-dev cypress-cucumber-preprocessor"
-5. To open Cypress dashboard: "npx cypress open" 
+3. Install Cypress:
+   npm install cypress --save-dev
+5. Install Cucumber preprocessor:
+   npm i @badeball/cypress-cucumber-preprocessor
+   npm i @bahmutov/cypress-esbuild-preprocessor
+7. To open Cypress dashboard: "npx cypress open" 
 
 ## Test Execution
 - For commandline execution:
