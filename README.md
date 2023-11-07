@@ -12,10 +12,10 @@ Install:
 3. Install Cypress:
    npm install cypress --save-dev
 5. Install Cucumber preprocessor:
-   npm install --save-dev @badeball/cypress-cucumber-preprocessor
-   npm i @bahmutov/cypress-esbuild-preprocessor                       
+   ```npm install --save-dev @badeball/cypress-cucumber-preprocessor```
+   ```npm i @bahmutov/cypress-esbuild-preprocessor```                     
 7. Other dependencies
-   npm i --save-dev @cypress/webpack-preprocessor
+   ```npm i --save-dev @cypress/webpack-preprocessor```
 8. To open Cypress dashboard: "npx cypress open" 
 
 ## Test Execution
