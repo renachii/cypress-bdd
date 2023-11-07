@@ -26,7 +26,7 @@ Install:
   ```npx cypress run --headless --browser chrome```
 
 # Test Environment
-https://admin-demo.nopcommerce.com/
+https://www.saucedemo.com/
 
 # References
 https://docs.cypress.io/guides/references/assertions
