@@ -1,31 +1,33 @@
 /// <reference type="cypress">
 import {Given, Then, When, Before} from "@badeball/cypress-cucumber-preprocessor";
-import homepage from "../pages/homepage";
-import loginpage from "../pages/loginpage";
-import {generateRandomString} from "../utils/common";
+import homepage from "../../support/pages/homepage";
+import loginpage from "../../support/pages/loginpage";
+import {generateRandomString} from "../../support/utils/common";
 
-var randomStr 
-var result
+var randomStr
 
 Before(function () {
     cy.fixture('credentials.json').then(function (data) {
         testdata = data //Assign data here
     })
+    cy.log("Before");
 })
 
 beforeEach(() => {
     cy.visit('/');
-    console.log("before each");
+    cy.log("before each");
 })
 
 afterEach(() => {
     // from commands.js
+    var result
     cy.elementExists("#password").then(boolean => result);
+    cy.log(`elementExists: ${result}`);
     if (result == true) {
         loginpage.content.userInput().clear();
         loginpage.content.passwordInput().clear();
     }
-    console.log("after each");
+    cy.log("after each");
 })
 
 Given('the portal login page is accessed' , () => {
@@ -34,7 +36,9 @@ Given('the portal login page is accessed' , () => {
 })
 
 Given('the admin credentials are entered' , () => {
+    cy.log(`testdata.Username: ${testdata.Username}`);
     loginpage.content.userInput().type(testdata.Username);
+    cy.log(`testdata.Password: ${testdata.Password}`);
     loginpage.content.passwordInput().type(testdata.Password);
 })
 
@@ -65,11 +69,12 @@ Then('the homepage is accessed' , (datatable) => {
     homepage.content.logoutButton().should('be.visible');
 
     datatable.hashes().forEach((data) => {
+        cy.log(`datatable - data.Title: ${data.Title}`);
         homepage.content.title().should('have.text', data.Title);
     })
 })
 
 Then("error message {string} is displayed", function (error) {
+    cy.log(`error message: ${error}`);
     loginpage.content.errorMessage().should('have.text', error);
 });
-

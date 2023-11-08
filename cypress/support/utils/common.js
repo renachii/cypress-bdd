@@ -5,5 +5,6 @@ export function generateRandomString(length){
         random_ascii = Math.floor((Math.random() * 25) + 97);
         random_string += String.fromCharCode(random_ascii)
     }
+    cy.log(`generateRandomString: ${random_string}`);
     return random_string
 }

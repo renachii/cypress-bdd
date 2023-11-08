@@ -20,5 +20,7 @@ module.exports = defineConfig({
     baseUrl: 'https://www.saucedemo.com/',
     chromeWebSecurity: false,
     defaultCommandTimeout: 5000,
+    video: true,
+    videoCompression: true,
   },
 });

@@ -1,16 +1,16 @@
 {
   "json": {
-    "enabled": false,
+    "enabled": true,
     "output": "cypress/cucumber-json/cucumber-json.json",
     "formatter": "cucumber-json-formatter"
   },
   "html": {
-    "enabled": false,
+    "enabled": true,
     "output": "cypress/cucumber-html/cucumber-html.html"
   },
   "messages": {
-    "enabled": false,
-    "output": "cypress/messages.ndjson"
+    "enabled": true,
+    "output": "cypress/messages.json"
   },
   "nonGlobalStepDefinitions": true,
   "stepDefinitions": [
