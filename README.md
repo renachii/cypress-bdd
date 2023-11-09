@@ -1,8 +1,8 @@
 # cypress-bdd
 cypress cucumber bdd
 
-Cypress 13.4.0
-NodeJs 20.9.0
+- Cypress 13.4.0
+- NodeJs 20.9.0
 
 ## Pre-requisites
 Install:
