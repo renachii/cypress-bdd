@@ -19,7 +19,9 @@ Install:
    - ```npm i @bahmutov/cypress-esbuild-preprocessor```                     
 7. Other dependencies
    - ```npm i --save-dev @cypress/webpack-preprocessor```
-8. To open Cypress dashboard: "npx cypress open" 
+8. To open Cypress dashboard: "npx cypress open"
+9. Create folders in e2e: "features" and "step_definitions"
+10. Create folders in support: "pages" and "utils"
 
 ## Test Execution
 - For commandline execution:
