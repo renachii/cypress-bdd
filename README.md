@@ -13,7 +13,7 @@ Install:
 1. Create folder and open in Visual Studio code
 2. Open terminal and run command "npm init" to generate package.json file
 3. Install Cypress:
-   npm install cypress --save-dev
+   ```npm install cypress --save-dev```
 5. Install Cucumber preprocessor:
    ```npm install --save-dev @badeball/cypress-cucumber-preprocessor```
    ```npm i @bahmutov/cypress-esbuild-preprocessor```                     
