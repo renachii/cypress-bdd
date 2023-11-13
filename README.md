@@ -30,6 +30,9 @@ Install:
 - Run headless in chrome browser: 
   ```npx cypress run --headless --browser chrome```
 
+- if there are scripts in package.json
+  ```npm run <script name>```
+
 # Test Environment
 - https://www.saucedemo.com/
 
